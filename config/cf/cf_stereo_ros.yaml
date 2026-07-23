@@ -1,0 +1,23 @@
+run_subscribe_msckf:
+  ros__parameters:
+    config_path: "/home/ros2_ws/install/ov_msckf/share/ov_msckf/config/cf/cf_stereo.yaml"
+    camera_topic_0: "/px4vision_custom_0/zedx_left/image"
+    camera_topic_1: "/px4vision_custom_0/zedx_right/image"
+    imu_topic: "/imu"
+    use_fej: true
+    integration: "analytical"
+    max_clones: 11
+    max_slam: 0
+    max_slam_in_update: 0
+    max_msckf_in_update: 99
+    num_aruco: 0
+    max_cameras: 2
+    feat_rep_msckf: "GLOBAL_3D"
+    feat_rep_slam: "ANCHOR_3D"
+    feat_rep_aruco: "ANCHOR_3D"
+    calib_cam_extrinsics: false
+    calib_cam_intrinsics: false
+    calib_cam_timeoffset: false
+    calib_imu_intrinsics: false
+    calib_imu_g_sensitivity: false
+    relative_config_imu: 0

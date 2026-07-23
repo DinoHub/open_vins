@@ -1,0 +1,28 @@
+%YAML:1.0
+cam0:
+  T_imu_cam:
+    - [ 0.0,  0.0, 1.0,  0.136]
+    - [-1.0,  0.0, 0.0,  0.060]
+    - [ 0.0, -1.0, 0.0,  0.000]
+    - [ 0.0,  0.0, 0.0,  1.000]
+
+  cam_overlaps: [1]
+  camera_model: pinhole
+  distortion_coeffs: [0.0, 0.0, 0.0, 0.0]
+  distortion_model: radtan
+  intrinsics: [509.0, 509.0, 640.0, 360.0]
+  resolution: [1280, 720]
+  rostopic: /px4vision_custom_0/zedx_left/image
+cam1:
+  T_imu_cam:
+    - [ 0.0,  0.0, 1.0,  0.136]
+    - [-1.0,  0.0, 0.0, -0.060]
+    - [ 0.0, -1.0, 0.0,  0.000]
+    - [ 0.0,  0.0, 0.0,  1.000]
+  cam_overlaps: [0]
+  camera_model: pinhole
+  distortion_coeffs: [0.0, 0.0, 0.0, 0.0]
+  distortion_model: radtan
+  intrinsics: [509.0, 509.0, 640.0, 360.0]
+  resolution: [1280, 720]
+  rostopic: /px4vision_custom_0/zedx_right/image
